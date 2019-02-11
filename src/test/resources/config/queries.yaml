@@ -1,0 +1,7 @@
+Get the number of intervals with null device codes:
+  select usage_dt,
+         count(*)
+  from database.table
+  where devicecode is null
+  and authority = '<<authority>>'
+  and insert_dttm > '<<max_summary_dttm>>'
